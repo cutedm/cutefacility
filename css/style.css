@@ -1,10 +1,4 @@
-/*
 
-Template 2085 Neuron
-
-http://www.tooplate.com/view/2085-neuron
-
-*/
 
 body {
 		background: #ffffff;
@@ -16,7 +10,7 @@ body {
 
 
 /*---------------------------------------
-    Typorgraphy              
+    Typography              
 -----------------------------------------*/
 
 h1,h2,h3,h4,h5,h6 {
@@ -102,6 +96,8 @@ a:hover, a:active, a:focus {
 #about, 
 #gallery,
 #contact,
+#team,
+#publications
 #blog, 
 #blog-single-post {
   padding-top: 60px;
@@ -109,7 +105,9 @@ a:hover, a:active, a:focus {
 }
 
 .main-about,
-.main-single-post,
+.main-technical,
+.main-team,
+.main-publications
 .main-gallery,
 .main-contact {
   height: 65vh;
@@ -284,15 +282,21 @@ a:hover, a:active, a:focus {
   background: url('../images/home-bg.jpg') no-repeat;
   height: 100vh;
 }
-.main-technical {
-  background: url('../images/technical-bg.jpg') no-repeat;
-}
 
 .main-about {
   background: url('../images/about-bg.jpg') no-repeat;
 }
-.main-single-post {
-  background: url('../images/single-post-bg.jpg') no-repeat;
+
+.main-technical {
+  background: url('../images/technical-bg.jpg') no-repeat;
+}
+
+.main-team {
+  background: url('../images/team-bg.jpg') no-repeat;
+}
+
+.main-publications {
+  background: url('../images/publications-bg.jpg') no-repeat;
 }
 
 .main-gallery {
@@ -613,28 +617,73 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
-   Blog Single Post section              
+   Technical section              
 -----------------------------------------*/
 
-#blog-single-post .blog-single-post-image {
+#blog-technical .blog-technical-image {
   padding-top: 22px;
 }
 
-#blog-single-post .blog-single-post-image .col-md-4 {
+#blog-technical .blog-technical-image .col-md-4 {
   padding-left: 0px;
   padding-right: 0px;
   padding-bottom: 22px;
 }
 
-#blog-single-post .blog-single-post-image img {
+#blog-technical .blog-technical-image img {
   border-radius: 1px;
   padding-right: 12px;
 }
 
-#blog-single-post .blog-post-des h3 {
+#blog-technical .blog-post-des h3 {
   padding-top: 16px;
 }
 
+/*---------------------------------------
+   Team section              
+-----------------------------------------*/
+
+#blog-team .blog-team-image {
+  padding-top: 22px;
+}
+
+#blog-team  .blog-team-image .col-md-4 {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 22px;
+}
+
+#blog-team  .blog-team-image img {
+  border-radius: 1px;
+  padding-right: 12px;
+}
+
+#blog-team  .blog-post-des h3 {
+  padding-top: 16px;
+}
+
+/*---------------------------------------
+   Publications section             
+-----------------------------------------*/
+
+#blog-publications .blog-publications-image {
+  padding-top: 22px;
+}
+
+#blog-publications  .blog-publications-image .col-md-4 {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 22px;
+}
+
+#blog-publications .blog-publications-image img {
+  border-radius: 1px;
+  padding-right: 12px;
+}
+
+#blog-publications  .blog-post-des h3 {
+  padding-top: 16px;
+}
 
 
 /*---------------------------------------
@@ -739,7 +788,9 @@ footer .footer-copyright {
 @media (max-width: 980px) {
 
   .main-about,
-  .main-single-post,  
+  .main-technical, 
+  .main-team, 
+  .main-publications,
   .main-gallery,
   .main-contact {
     height: 35vh;
@@ -762,7 +813,7 @@ footer .footer-copyright {
     padding-left: 0px;
   }
 
-  #blog-single-post .blog-single-post-image img {
+  #blog-technical .blog-technical-image img {
     padding-bottom: 22px;
   }
 
@@ -780,8 +831,8 @@ footer .footer-copyright {
   }
 
   #about, #gallery,
-  #contact,
-  #blog, #blog-single-post {
+  #contact, #team, #publications,
+  #blog, #blog-technical {
     padding-top: 60px;
     padding-bottom: 60px;
   }
